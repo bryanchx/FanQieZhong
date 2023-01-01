@@ -17,7 +17,7 @@ music_flag = True
 # 调用Tk()创建主窗口
 root = tk.Tk()
 # 给主窗口起一个名字，也就是窗口的名字
-root.title('Rio的番茄钟')
+root.title('麦施番茄钟')
 # 设置窗口大小:宽x高,注,此处不能为 "*",必须使用 "x"
 root.geometry('460x300')
 root.configure(bg='Tomato')
