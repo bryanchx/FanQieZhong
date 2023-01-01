@@ -39,7 +39,7 @@ def mymsg2():
 # strptime()函数将字符串转换为datetime
 def tomato_clock(remain_time):
     # 如果在休息时间未结束就开启番茄钟，则停止音乐
-    pygame.mixer.music.pause()
+    # pygame.mixer.music.pause()
     # 避免未进行番茄钟时长选择
     if remain_time == 0:
         lb3.configure(text='请先选择番茄钟时长')
@@ -111,23 +111,23 @@ def music_allow():
     # 如果已经是True(即不禁止音乐时)，勾选了按钮，则music_flag 变为 False，禁止音乐
     if music_flag:
         music_flag = False
-        pygame.mixer.music.set_volume(0.0)
+        # pygame.mixer.music.set_volume(0.0)
     else:
         music_flag = True
-        pygame.mixer.music.set_volume(0.5)
+        # pygame.mixer.music.set_volume(0.5)
 
 if __name__ == "__main__":
 
     #音乐初始化
-    pygame.mixer.init()
-    # 异常抛出，防止没有放音乐文件
-    try:
-        pygame.mixer.music.load('music.mp3')
-    except Exception as e:
-        print(type(e), e)
-        tk.messagebox.showinfo("提示", "无文件music.mp3或改文件路径不对")
-        sys.exit()
-    pygame.mixer.music.set_volume(0.5)
+    # pygame.mixer.init()
+    # # 异常抛出，防止没有放音乐文件
+    # try:
+    #     pygame.mixer.music.load('music.mp3')
+    # except Exception as e:
+    #     print(type(e), e)
+    #     tk.messagebox.showinfo("提示", "无文件music.mp3或改文件路径不对")
+    #     sys.exit()
+    # pygame.mixer.music.set_volume(0.5)
     # 创建变量
     var = tk.IntVar()
     # 给变量赋初值为25
